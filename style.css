@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Ewert&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;  
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
+    font-family: "Libertinus Sans", sans-serif;
+  }
+  body{
+      background: #222;
+      background-image: url("assets/bg.jpg");
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px);
+      background-blend-mode:difference;
+      width: 100vw;
+      height: 100vh;
+   }
+   .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.148);
+        /* color: rgba(233, 220, 220, 0.627); */
+   }
+   .header p{
+    max-width: 300px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.837);
+   }
+   .thead{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+   }
+   .thead h1{
+    color: rgb(240, 234, 234);
+   }
+  .card{
+  
+      width:90%;
+      max-width:470px;
+      background:linear-gradient(to top ,rgb(0,0,0,0.15)),;
+      z-index: 1;
+      color: #fff;
+      margin: 100px auto 0;
+      box-shadow: inset 1px 1px 3px rgb(252, 250, 250) , inset -1px -1px 3px white;
+      border-radius:20px;
+      padding: 40px 35px;
+      text-align:center; 
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+   
+  .search{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+
+    }
+    
+  .search input{
+  
+      border:0;
+      outline:0;
+      background:#ebfffc;
+      color:hsl(248, 59%, 61%);
+      padding:10px 25px;
+      height:60px;
+      max-width: 300px;
+      border-radius:30px;
+      flex:1;
+      margin-right:16px;
+      font-size:18px;
+  }
+  .search button{
+      border:0;
+      outline:0;
+      background:#ebfffc43;
+      color: black;
+      border-radius: 25%;
+      width: 60px;
+      height: 60px;
+      cursor:pointer;
+      border-block-end-color: #ebfffc;
+  }
+  
+  .search button img{
+      width:40px;
+  }
+  .Weather-icon{
+      width:170 px;
+      margin-top:30 px;
+  }
+  .Weather H1{
+  font-size:80 px;
+  font-weight:500;
+  }
+  .weather H1{
+  font-size:45 px;
+  font-weight:400;
+  margin-top: -10 px;
+  }
+  .details{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 px 20 px;
+      margin-top: 50 px;
+  }
+  .col{
+      display: flex;
+      align-items: center;
+      text-align: left;
+  }
+  .col img{
+      width: 40 px;
+      align-items: center;
+      text-align: left;
+      margin-right: 10 px;
+  }
+  .humidity{
+      font-size: 28 px;
+      margin-top: -6 px;
+  }
+  .wind{
+      font-size: 28 px;
+      margin-top: -6 px;
+  }
+  .Weather{
+      display: none;
+  }
+
+  /* responsiveness */
+  @media screen and (max-width: 450px) {
+    /* .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    } */
+     .header{
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: flex-start;
+     }
+    .search{
+        display: flex;
+        flex-direction:column ;
+        gap: 1rem; 
+
+    }
+    .search button{
+        width: 120px;
+        border-radius: 20%;
+    }
+    
+    .details{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    
+   }
