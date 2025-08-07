@@ -12,7 +12,7 @@
 - 🎨 Clean, modern UI with a blurred background effect
 
 ## Live Demo
-
+https://akashdixit05.github.io/SkyTracker/
 
 ## 🚀 Tech Stack
 
